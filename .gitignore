@@ -1,0 +1,26 @@
+# Data — never commit raw/processed data
+data/
+
+# Claude configuration and memory
+.claude/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.python-version
+
+# Trained models and numpy arrays
+*.pkl
+*.npy
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
