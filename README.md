@@ -15,23 +15,6 @@ The study addresses two questions simultaneously:
 
 Both questions are studied on real transactional and CRM data: 4.2M transactions, 12M marketing messages, and 2.1M recorded conversions across 174 business units.
 
----
-
-## Key Results
-
-| Metric | Current system | Model (RF) | Delta |
-|---|---|---|---|
-| Targeting precision | 78.4% | 90.5% | +12.1pp |
-| Recall | 57.5% | 62.6% | +5.1pp |
-| False positives / 1,000 msgs | 216 | 95 | −56% |
-| Lift vs. random | 1.04× | 1.20× | +0.16× |
-| Retention rate (IR=10%) | 28.86% | 29.24% | +0.40pp |
-| Additionally retained clients | — | +277 / cohort | — |
-
-**Timing finding**: conversion rate in week 1 (days 0–7) is 31.6%, dropping to 16.5% in week 2 and 9.2% after week 5. The current system already concentrates 62.3% of retention messages in week 1, leaving timing improvement modest but measurable (+0.48pp to +1.43pp at 10–30% IR gain).
-
----
-
 ## Research Design
 
 ### Churn Definition
@@ -206,7 +189,5 @@ Python version: see `.python-version`.
 ## Author
 
 Sviatoslav Sharak — Bachelor's student, Ukrainian Catholic University, Faculty of Applied Sciences
-
-Thesis supervisor: [supervisor name]
 
 Academic year: 2025–2026
