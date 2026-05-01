@@ -209,6 +209,4 @@ Python version: see `.python-version`.
 
 Sviatoslav Sharak — Bachelor's student, Ukrainian Catholic University, Faculty of Applied Sciences
 
-Thesis supervisor: [supervisor name]
-
 Academic year: 2025–2026
