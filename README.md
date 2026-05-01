@@ -19,14 +19,16 @@ Both questions are studied on real transactional and CRM data: 4.2M transactions
 
 ## Key Results
 
-| Metric | Current system | Model (RF) | Delta |
+| Metric | Current system | 90-day RF (upper bound) | Prod: 30-day multi-visit |
 |---|---|---|---|
-| Targeting precision | 78.4% | 90.5% | +12.1pp |
-| Recall | 57.5% | 62.6% | +5.1pp |
-| False positives / 1,000 msgs | 216 | 95 | −56% |
-| Lift vs. random | 1.04× | 1.20× | +0.16× |
-| Retention rate (IR=10%) | 28.86% | 29.24% | +0.40pp |
-| Additionally retained clients | — | +277 / cohort | — |
+| Targeting precision | 78.2% | 90.8% | 87.8% |
+| Recall | 30.2% | 60.7% | 71.9% |
+| False positives / 1,000 msgs | 218 | 92 | 122 |
+| Lift vs. base rate | 1.03× | 1.19× | 1.13× |
+| Retention rate (IR=10%) | 24.70% | — | 27.83% |
+| Additionally retained clients | — | — | +2,109 / cohort (+3.13pp) |
+
+> The 90-day model is an upper bound — it cannot be deployed at day 30 because its features require transactions from days 31–90 that have not yet occurred. The production figure is the 30-day multi-visit model.
 
 **Timing finding**: conversion rate in week 1 (days 0–7) is 31.6%, dropping to 16.5% in week 2 and 9.2% after week 5. The current system already concentrates 62.3% of retention messages in week 1, leaving timing improvement modest but measurable (+0.48pp to +1.43pp at 10–30% IR gain).
 
